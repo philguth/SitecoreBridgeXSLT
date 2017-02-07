@@ -243,7 +243,7 @@
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Usage/StorageTemperature)"/>
 <xsl:value-of select="$delimiter"/>
-<xsl:value-of select="/ProductDetailsBySku/ProductDetailsBySku/Usage/Troubleshooting"/>
+<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Usage/Troubleshooting)"/>
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Usage/MaterialsRequriedbutnotSupplied)"/>
 <xsl:value-of select="$delimiter"/>
