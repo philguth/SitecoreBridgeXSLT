@@ -205,7 +205,7 @@
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/PolymeraseIcons/PCR)"/>
 <xsl:value-of select="$delimiter"/>
-<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/PolymeraseIcons/ExtractionFree)"/>
+<xsl:value-of select="concat(normalize-space(/ProductDetailsBySku/ProductDetailsBySku/PolymeraseIcons/ExtractionFree),(/ProductDetailsBySku/ProductDetailsBySku/ClassSpecific/ExtractionFree))"/>
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/PolymeraseIcons/TmPlus3)"/>
 <xsl:value-of select="$delimiter"/>
@@ -237,7 +237,7 @@
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/TimeSaver/NotTested)"/>
 <xsl:value-of select="$delimiter"/>
-<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/MasterMix/Suitabilityforextendeddigests)"/>
+<xsl:value-of select="concat(normalize-space(/ProductDetailsBySku/ProductDetailsBySku/MasterMix/Suitabilityforextendeddigests), (/ProductDetailsBySku/ProductDetailsBySku/ClassSpecific/Suitabilityforextendeddigests)) "/>
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Usage/IncubationTemperature)"/>
 <xsl:value-of select="$delimiter"/>
