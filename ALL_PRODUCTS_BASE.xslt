@@ -4,30 +4,30 @@
                <xsl:output method="text" version="1.0" encoding="UTF-8" indent="no"/>
  
                <xsl:template match="/">
-               <xsl:text>Catalog Number|Class Name|OEM Message|Commercially Available|Full Product Name|For NEBCloner|Long Discription|Short Description|Highlight|Application Features|Advantage Features|Supplied As|Chart I|Chart 6 MeA|Chart 6-OG|Chart U|Chart Termini Created from Cleavage 5 Terminus|Chart Termini Created from Cleavage 3 Terminus|Chart AP|Chart DHT:A|Chart 5HMU:A|Chart 5HMU:G|Chart I:T|Chart 6MeA:T|Chart 8-OG:C|Chart 8-OG:G|Chart U:A|Chart U:G|Chart Thymine Glycol:A|Chart DHT|Chart 5 HMU|Cloned at NEB|Recombinant|Exhibits Methylase Activity|HF Enzyme|Non HF Version|HF Version|Reduced Star Activity|Restriction Enzyme Type|Site Preference|HF Factor|Has Re-Mix Version|Ligation of blunt DNA ends|Ligation of cohesive DNA ends|Ligation of Preadenylated Adapters to RNA|Nicks in dsDNA|Nicks in dsRNA|Recommended for cloning|Thermostable|Ligase Type|Joining of RNA and DNA in DS Structure|Joining ssRNA|Labeling of 3 termini of RNA|Ligase detection reaction and ligase chain reaction|Keywords|Product Alias|Supplied With Product Name|Licenses|Patents|Trademarks|Molecular Weight UOM|Molecular Weight Apparent|Molecular Weight Calculated|Molecular Weight Theoretical|Is Heat Activated|Heat Inactivation Temperature|Heat Inactivation Temperature Time|Joining ss RNA|Master Mix of is NEB Product|Master Mix of NEB Product|Reaction Volume Definition|Concentration Usage Factor Supplied|Concentration Usage|Reaction Definition|Fidelity vs Taq|Polymerase Type|Kit Available|KmDNA|KmDNA UOM|KmDNTPs|KmDNTPs UOM|Longest Primer Extension|Longest Primer Extension UOM|Strand Displacement|Overall Thermal Stability|Exonuclease 3-5|Exonuclease 5-3|Amplicon Size|Direct Gel Loading|Error Rate Selector|Error Rate value|Error Rate power|Extend RNA Primer|Extension from Nick|Extension Rate|Nick Translation|High Fidelity|Hot Start|PCR|Extraction Free|Tm Plus3|Tm minus5|Usage Concentration Min|Usage Concentration Max|Usage Concentration Value|Reconstitution|Timesaver 5 min Plasmid|Timesaver 5 min Substrate|Timesaver 5 min PCR|Timesaver 15 min Plasmid|Timesaver 15 min Substrate|Timesaver 15 min PCR|Timesaver|Timesaver Statement|Not Tested|Suitability for extended digests|Incubation Temperature|Storage Temperature|Troubleshooting|Materials Required but not Supplied|Master Mix of Note|Epi Grey|Two Plus Site|Epimark Icon</xsl:text>
+               <xsl:text>Catalog Number|Class Name|OEM Message|Commercially Available|Full Product Name|For NEBCloner|Long Description|Short Description|Highlight|Application Features|Advantage Features|Supplied As|Chart I|Chart 6 MeA|Chart 6-OG|Chart U|Chart Termini Created from Cleavage 5 Terminus|Chart Termini Created from Cleavage 3 Terminus|Chart AP|Chart DHT:A|Chart 5HMU:A|Chart 5HMU:G|Chart I:T|Chart 6MeA:T|Chart 8-OG:C|Chart 8-OG:G|Chart U:A|Chart U:G|Chart Thymine Glycol:A|Chart DHT|Chart 5 HMU|Cloned at NEB|Recombinant|Exhibits Methylase Activity|HF Enzyme|Non HF Version|HF Version|Reduced Star Activity|Restriction Enzyme Type|Site Preference|HF Factor|Has Re-Mix Version|Ligation of blunt DNA ends|Ligation of cohesive DNA ends|Ligation of Preadenylated Adapters to RNA|Nicks in dsDNA|Nicks in dsRNA|Recommended for cloning|Thermostable|Ligase Type|Joining of RNA and DNA in DS Structure|Joining ssRNA|Labeling of 3 termini of RNA|Ligase detection reaction and ligase chain reaction|Keywords|Product Alias|Supplied With Product Name|Licenses|Patents|Trademarks|Molecular Weight UOM|Molecular Weight Apparent|Molecular Weight Calculated|Molecular Weight Theoretical|Is Heat Activated|Heat Inactivation Temperature|Heat Inactivation Temperature Time|Joining ss RNA|Master Mix of is NEB Product|Master Mix of NEB Product|Reaction Volume Definition|Concentration Usage Factor Supplied|Concentration Usage|Reaction Definition|Fidelity vs Taq|Polymerase Type|Kit Available|KmDNA|KmDNA UOM|KmDNTPs|KmDNTPs UOM|Longest Primer Extension|Longest Primer Extension UOM|Strand Displacement|Overall Thermal Stability|Exonuclease 3-5|Exonuclease 5-3|Amplicon Size|Direct Gel Loading|Error Rate Selector|Error Rate value|Error Rate power|Extend RNA Primer|Extension from Nick|Extension Rate|Nick Translation|High Fidelity|Hot Start|PCR|Extraction Free|Tm Plus3|Tm minus5|Usage Concentration Min|Usage Concentration Max|Usage Concentration Value|Reconstitution|Timesaver 5 min Plasmid|Timesaver 5 min Substrate|Timesaver 5 min PCR|Timesaver 15 min Plasmid|Timesaver 15 min Substrate|Timesaver 15 min PCR|Timesaver|Timesaver Statement|Not Tested|Suitability for extended digests|Incubation Temperature|Storage Temperature|Troubleshooting|Materials Required but not Supplied|Master Mix of Note|Epi Grey|Two Plus Site|Epimark Icon</xsl:text>
 <xsl:text>&#13;&#10;</xsl:text>
 
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/CoreProductInfo/CatalogNumber)"/>
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="/ProductDetailsBySku/ProductDetailsBySku/Classname"/>
 <xsl:value-of select="$delimiter"/>
-<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/CoreProductInfo/OemMessage)"/>
+<!-- <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/CoreProductInfo/OemMessage)"/> -->
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/CoreProductInfo/CommerciallyAvailable)"/>
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/CoreProductInfo/FullProductName)" disable-output-escaping="yes"/>
 <xsl:value-of select="$delimiter"/>
-<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/CoreProductInfo/ForNEBCloner)"/>
+<!-- <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/CoreProductInfo/ForNEBCloner)"/> -->
 <xsl:value-of select="$delimiter"/>
 <!--<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Description/LongDescription)"/>-->
 <xsl:value-of select="$delimiter"/>
-<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Description/ShortDescription)"/>
+<!-- <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Description/ShortDescription)"/> -->
 <xsl:value-of select="$delimiter"/>
-<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Description/Highlight)"/>
+<!-- <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Description/Highlight)"/> -->
 <xsl:value-of select="$delimiter"/>
-<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Description/ApplicationFeature)"/>
+<!-- <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Description/ApplicationFeature)"/> -->
 <xsl:value-of select="$delimiter"/>
-<xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Description/AdvantageFeature)"/>
+<!-- <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/Description/AdvantageFeature)"/> -->
 <xsl:value-of select="$delimiter"/>
 <xsl:value-of select="normalize-space(/ProductDetailsBySku/ProductDetailsBySku/ProductionFacts/SuppliedAs)"/>
 <xsl:value-of select="$delimiter"/>
